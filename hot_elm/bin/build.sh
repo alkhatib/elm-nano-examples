@@ -13,7 +13,7 @@ function report() {
   touch tmp/build.log
   ERRORS=`cat tmp/build.log`
   if [ -n "$ERRORS" ]; then
-    echo "Comiled with errors"
+    echo "Compiled with errors"
     # to also print errors in console we just compile a second time
     elm make src/Main.elm
     VALUE=`date -r tmp/build.log`
